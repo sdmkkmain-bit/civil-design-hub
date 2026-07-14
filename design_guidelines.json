@@ -1,0 +1,89 @@
+{
+  "theme": "dark",
+  "typography": {
+    "headings": {
+      "font_family": "Cormorant Garamond, serif",
+      "import_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap",
+      "style": "Elegant, tight tracking for high-end luxury editorial feel",
+      "classes": "font-serif tracking-tight"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "import_url": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap",
+      "style": "Clean, minimal, stark contrast to the serif headings",
+      "classes": "font-sans leading-relaxed tracking-wide"
+    }
+  },
+  "colors": {
+    "primary": "#0A0A0A",
+    "surface": "#141414",
+    "accent_gold": "#D4AF37",
+    "accent_gold_hover": "#F3E5AB",
+    "text_primary": "#FAFAFA",
+    "text_secondary": "#A3A3A3",
+    "border_subtle": "rgba(255,255,255,0.1)"
+  },
+  "layouts": {
+    "hero": "Massive kinetic typography 'A.S. SOLUTIONS' split or staggered. Use Framer Motion for line-by-line masked reveals. Background should be #0A0A0A with a very subtle, slow-moving luxury interior image layered behind at 20% opacity. Include the 'AS' monogram prominently.",
+    "marquee": "A single, slow-moving editorial marquee using `react-fast-marquee`. Text: 'MODERN KITCHEN • FURNITURE • CIVIL WORKS • ELECTRICAL • INTERIOR DESIGN'. Style: `font-serif text-5xl md:text-7xl text-white/50 hover:text-[#D4AF37] transition-colors`.",
+    "services_manifesto": "Numbered chapters (01, 02, 03...). Large gold numbers (`text-7xl md:text-9xl text-[#D4AF37]/20`). Asymmetrical grid layout for services. Images clipped in tall vertical frames, appearing or slightly expanding on hover (parallax effect).",
+    "contact_section": "Massive 'LET'S TALK' heading. A glassmorphism/premium card containing Ankur Singh's details. A prominent scannable WhatsApp QR code (use react-qr-code or similar, or just a stylized square if mocked). Direct CTA buttons for Email and WhatsApp with gold hover states."
+  },
+  "motion": {
+    "smooth_scroll": "Lenis is MANDATORY. Initialize standard Lenis smooth scrolling.",
+    "hero_reveal": "Framer Motion. `initial={{ y: '100%' }}` `animate={{ y: 0 }}` with `overflow: hidden` on parent for that masked text reveal effect.",
+    "hover_effects": "Images scale up slightly (`scale-105`) within `overflow-hidden` containers. Buttons have an inner gold glow or border trace effect.",
+    "parallax": "Use Framer Motion's `useScroll` and `useTransform` to make the hero background or service images move slightly at a different speed than the scroll."
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1724582586495-d050726cf354?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxwcmVtaXVtJTIwbGl2aW5nJTIwcm9vbSUyMGludGVyaW9yJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc4NDAxNzA0NHww&ixlib=rb-4.1.0&q=85",
+      "description": "Dark premium living room for hero background (use at low opacity)"
+    },
+    "kitchen_service": {
+      "url": "https://images.unsplash.com/photo-1663811396777-05505d999151?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBtb2Rlcm4lMjBkYXJrJTIwa2l0Y2hlbiUyMGludGVyaW9yfGVufDB8fHx8MTc4NDAxNzA0NHww&ixlib=rb-4.1.0&q=85",
+      "description": "Modern dark kitchen interior"
+    },
+    "furniture_service": {
+      "url": "https://images.unsplash.com/photo-1617873228868-f64a54e91a01?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwzfHxjdXN0b20lMjB3b29kZW4lMjBmdXJuaXR1cmUlMjBkZXRhaWx8ZW58MHx8fHwxNzg0MDE3MDQ0fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Custom wooden furniture detail"
+    },
+    "civil_works_service": {
+      "url": "https://images.unsplash.com/photo-1591955506264-3f5a6834570a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmFsJTIwY29uc3RydWN0aW9uJTIwc2l0ZSUyMGVsZWdhbnR8ZW58MHx8fHwxNzg0MDE3MDQ1fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Elegant architectural construction site"
+    }
+  },
+  "components": [
+    {
+      "name": "Hero Section",
+      "instructions": "Full height. Uses Framer Motion for text reveal. Background image wrapped in a motion div for subtle slow pan."
+    },
+    {
+      "name": "Marquee",
+      "instructions": "Use react-fast-marquee. Very slow speed, seamless loop."
+    },
+    {
+      "name": "Services Grid",
+      "instructions": "Asymmetrical layout. DO NOT USE STANDARD CARDS. Use text blocks paired with floating images. Treat them like an editorial spread."
+    },
+    {
+      "name": "Contact & Footer",
+      "instructions": "Include all provided contact details. Display a QR code (use `react-qr-code` to generate the WhatsApp QR for phone number 7738600502). Direct `mailto:` and `wa.me/` links for buttons."
+    }
+  ],
+  "accessibility": {
+    "contrast": "Ensure the gold text on the dark background passes APCA/WCAG. Use off-white #FAFAFA for standard text.",
+    "data_testids": "Ensure all interactive elements have `data-testid` attributes."
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "This is a FULLY STATIC SITE. No backend endpoints. No form submissions to servers—just mailto: and wa.me/ links.",
+    "MUST use Lenis for smooth scroll.",
+    "MUST use Framer motion.",
+    "Create an Awwwards-level luxury aesthetic.",
+    "Do not use generic fonts like Inter. Use the provided Cormorant Garamond and Manrope.",
+    "Do not center everything—use asymmetrical tension.",
+    "DO NOT use complete transparent backgrounds for overlays.",
+    "All interactive elements MUST include a `data-testid` attribute.",
+    "Ensure the application works seamlessly as a static site export."
+  ]
+}
