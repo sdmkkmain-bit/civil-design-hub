@@ -9,8 +9,8 @@ export const BRAND = {
   city: "Dombivali East, Maharashtra",
   phone: "8574971297",
   phoneDisplay: "+91 85749 71297",
-  whatsapp: "7738600502",
-  whatsappIntl: "917738600502",
+  whatsapp: "8574971297",
+  whatsappIntl: "918574971297",
   email: "ab7854505@gmail.com",
   estd: "Craft since day one",
 };
