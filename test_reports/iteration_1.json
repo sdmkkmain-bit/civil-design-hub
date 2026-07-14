@@ -1,0 +1,25 @@
+{
+  "summary": "Frontend-only smoke test of A.S. Solutions static site on desktop (1920x800) and mobile (390x844). Landing page, hero CTA, nav links, service rows, gallery, contact details, WhatsApp QR, contact CTAs, footer, and mobile menu all verified. No console/runtime errors.",
+  "tested_scope": ["frontend"],
+  "passed": [
+    "landing-page renders at / with all sections (nav, hero, ticker, services, gallery, about, contact, footer)",
+    "hero-cta href -> https://wa.me/917738600502?text=... (contains 917738600502)",
+    "nav-link-services/gallery/about/contact all present; clicking services smooth-scrolled window to Y=966",
+    "5 service rows service-row-01..05 rendered",
+    "Gallery section contains 4 images",
+    "contact-phone href = tel:+918574971297",
+    "contact-whatsapp href = https://wa.me/917738600502?text=... (contains 917738600502)",
+    "contact-email href = mailto:ab7854505@gmail.com?subject=... (contains ab7854505@gmail.com)",
+    "contact-address href = google maps search of 'A.S. Solution, Dombivali East, Tilak Nagar'",
+    "whatsapp-qr-card and whatsapp-qr SVG rendered (react-qr-code encodes WHATSAPP_URL -> wa.me/917738600502)",
+    "contact-cta-whatsapp -> wa.me/917738600502; contact-cta-email -> mailto:ab7854505@gmail.com — both correct",
+    "Footer contains tel:+918574971297, wa.me/917738600502 and mailto:ab7854505@gmail.com hrefs",
+    "Mobile (390x844): nav-mobile-toggle opens nav-mobile-menu; nav-mobile-link-contact scrolls to Y=9046 (contact section)",
+    "No console errors, no page errors on load or interactions"
+  ],
+  "failed": [],
+  "action_items": [],
+  "success_rate": {"backend": "N/A (not tested per request)", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}
