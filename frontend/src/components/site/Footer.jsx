@@ -43,6 +43,8 @@ export const Footer = () => {
           <p className="font-sans text-xs text-white/35">© {new Date().getFullYear()} {BRAND.name}. All rights reserved.</p>
           <p className="font-sans text-xs text-white/35">Interior · Kitchen · Furniture · Electrical · Civil</p>
         </div>
+
+        <p className="mt-3 text-[12px] text-white/35 text-center">Created by Monty Nandyal</p>
       </div>
     </footer>
   );
