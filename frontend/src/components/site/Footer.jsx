@@ -44,7 +44,10 @@ export const Footer = () => {
           <p className="font-sans text-xs text-white/35">Interior · Kitchen · Furniture · Electrical · Civil</p>
         </div>
 
-        <p className="mt-3 text-[12px] text-white/35 text-center">Created by Monty Nandyal</p>
+        <div className="mt-3">
+          <p className="text-[12px] text-white/35 text-center">Website Designed &amp; Developed by</p>
+          <p className="mt-2 text-[12px] md:text-[13px] text-white/40 text-center font-medium">Monty Nandyal</p>
+        </div>
       </div>
     </footer>
   );
